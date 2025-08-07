@@ -724,3 +724,31 @@
     padding: 2rem 1rem !important;
   }
 }
+@media (max-width: 576px) {
+  .tech-icons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    gap: 1.2rem;
+    padding: 1rem 1rem 1.5rem 1rem;
+    scroll-snap-type: x mandatory;
+  }
+
+  .tech-icon {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    font-size: 2rem;
+    min-width: 60px;
+    text-align: center;
+  }
+
+  .tech-icons::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .tech-icons::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #3b82f6, #9333ea);
+    border-radius: 3px;
+  }
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIN</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <link rel="icon" href="images/pngtree-3d-letters-t-retro-text-effect-transparent-background-png-image_5872966.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-dark-bg text-text-primary overflow-x-hidden">
+   
+    <div class="fixed inset-0 z-0">
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+    </div>
+
+    
+    <nav class="fixed top-0 w-full z-50 navbar-blur border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold gradient-text">Gibaut Agustín </h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#inicio" class="px-3 py-2 text-sm font-medium hover:text-accent transition-colors">Inicio</a>
+                        <a href="#about" class="px-3 py-2 text-sm font-medium hover:text-accent transition-colors">About</a>
+                        <a href="#contacto" class="px-3 py-2 text-sm font-medium hover:text-accent transition-colors">Contacto</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-text-primary hover:text-accent focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="mobile-menu" class="md:hidden hidden bg-dark-secondary border-t border-gray-800">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#inicio" class="block px-3 py-2 text-base font-medium hover:text-accent transition-colors">Inicio</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium hover:text-accent transition-colors">About</a>
+                <a href="#proyectos" class="block px-3 py-2 text-base font-medium hover:text-accent transition-colors">Proyectos</a>
+                <a href="#contacto" class="block px-3 py-2 text-base font-medium hover:text-accent transition-colors">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+   
+    <section id="inicio" class="hero-section relative min-h-screen flex items-center justify-center pt-16">
+        <div class="relative z-10 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+                <div class="flex-1 text-center lg:text-left">
+                    <h1 class="hero__title--animated mb-6">
+                        <span class="static-title text-text-primary">Desarrollador</span>
+                        <span class="dropping-texts">
+                            <span>Full Stack</span>
+                            <span>Frontend</span>
+                            <span>Backend</span>
+                            <span>Mobile</span>
+                            <span>IoT</span>
+                        </span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-text-secondary mb-8 max-w-2xl mx-auto lg:mx-0">
+                        Amo la tecnología, la programación me apasiona. Siempre estoy enfocado en encontrar soluciones.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#proyectos" class="px-8 py-3 bg-accent text-white rounded-lg hover:bg-blue-600 transition-colors font-medium">
+                            Ver Proyectos
+                        </a>
+                        <a href="#contacto" class="px-8 py-3 border border-accent text-accent rounded-lg hover:bg-accent hover:text-white transition-colors font-medium">
+                            Contactar
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero__image-container flex-shrink-0">
+                    <span class="hero__image-animated-border"></span>
+                    <div class="hero__profile-img--large bg-gradient-to-br from-accent to-purple-600 rounded-full">
+                       <img src="images/167491736.jpg" alt="Logo-Profile" style="border: 2px solid white; border-radius: 8px;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+<section id="about" class="relative py-20 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-5xl mx-auto relative z-10">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 gradient-text">Sobre Mí</h2>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      
+      <div class="flex justify-center">
+        <div class="w-64 h-64 bg-gradient-to-br from-accent to-purple-600 rounded-2xl animate-pulse-slow relative overflow-hidden shadow-lg">
+          <img
+            src="images/167491736.jpg"
+            alt="Foto de perfil"
+            class="w-full h-full object-cover rounded-2xl border-2 border-white"
+          />
+        </div>
+      </div>
+
+     
+      <div class="space-y-6">
+        <p class="text-text-secondary text-lg leading-relaxed">
+          Soy un desarrollador apasionado por crear soluciones digitales innovadoras. Con experiencia en tecnologías modernas, me especializo en desarrollar aplicaciones web y móviles que combinan funcionalidad y diseño elegante.
+        </p>
+
+        <div class="space-y-4">
+          <h3 class="text-xl font-semibold text-text-primary">Tecnologías</h3>
+
+         
+          <div class="tech-icons">
+            <div class="tech-icon html">
+              <i class="fab fa-html5"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="tech-icon css">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS3</span>
+            </div>
+            <div class="tech-icon js">
+              <i class="fab fa-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="tech-icon react">
+              <i class="fab fa-react"></i>
+              <span>React</span>
+            </div>
+            <div class="tech-icon node">
+              <i class="fab fa-node-js"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="tech-icon python">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    
+
+    
+    <section id="contacto" class="relative py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto relative z-10 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8 gradient-text">Contacto</h2>
+            <p class="text-text-secondary text-lg mb-12 max-w-2xl mx-auto">
+                ¿Tienes un proyecto en mente? Me encantaría colaborar contigo y hacer realidad tus ideas.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <a href="mailto:tu@agusgibaut693@gmail.com" class="flex items-center gap-3 px-6 py-3 bg-dark-secondary border border-gray-700 rounded-lg hover:border-accent transition-colors">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                    </svg>
+                    GMAIL
+                </a>
+                <a href="https://github.com/AgustinGibaut" class="flex items-center gap-3 px-6 py-3 bg-dark-secondary border border-gray-700 rounded-lg hover:border-accent transition-colors">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="relative py-8 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <p class="text-text-secondary">
+                © 2025 Derechos Reservados. Diseñado y desarrollado con ❤️ porr Agustin Gibaut
+            </p>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
